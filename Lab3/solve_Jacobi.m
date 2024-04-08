@@ -18,8 +18,8 @@ L = tril(A, -1);
 U = triu(A, 1);
 D = diag(diag(A));
 
-M = -(L + U) / D;
-bm = D \ b;
+M = -inv(D) * (L + U);
+bm = inv(D) * b;
 
 x = ones(N, 1);
 max_iterations = 1000; 
