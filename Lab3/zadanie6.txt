@@ -1,0 +1,15 @@
+Wyniki dla metody bezpośredniej:
+Norma błędu residualnego: 7.0645e-13
+Norma błędu residualnego jest bardzo mała (rzędu 10^-13), co sugeruje, że rozwiązanie jest bardzo bliskie dokładnemu lub nawet dokładne.
+Możemy uznać, że metoda bezpośrednia jest skuteczna w tym przypadku i generuje wysoką jakość wyników oraz zbiega się.
+
+
+Wyniki dla metody Jacobiego:
+Norma błędu residualnego: NaN
+Wnioski:
+Na podstawie wykresu norm błędu residualnego w kolejnych iteracjach można śmiało stwierdzić, że wykres nie zbiega się. Pondato końcowa wartość błędu jest rzędu 10^307, stąd program miał problem, aby te liczbę wypisać i uznał ją jako NaN. Metoda jest nieskuteczna, ponieważ wartość ta jest zdecydowanie zbyt duża. 
+
+Wyniki dla metody Gaussa-Seidela:
+Norma błędu residualnego: 6.4367e+10
+Wnioski:
+Norma błędu residualnego jest bardzo wysoka (rzędu 10^10), co sugeruje, że rozwiązanie nie jest zbieżne lub zbiega się bardzo wolno. Wykres norm błędu residualnego w kolejnych iteracjach przedstawia tę zależność oraz upewnia w przekonaniu, że metoda iteracyjna nie zbiega się. Wysoka wartość błędu residualnego sugeruje, że metoda Gaussa-Seidela jest nieskuteczna w tym przypadku.
