@@ -1,0 +1,14 @@
+Wyniki programu przedstawiają:
+-Interwał początkowy
+-Ilość iteracji
+-Zastosowany algorytm
+-Znalezioną wartość fzero
+-Zbieżność
+
+W pierwszym przypadku wyszukano zero dla funkcji tan(x) w okolicy 6. Znaleziono wartość około 6.2832, co jest bliskie wartości pi. Oznacza to, że funkcja tangens ma miejsce zerowe przy tej wartości.
+Przedział: [5.66059, 6.33941]
+Wynik: 6.2832
+
+W drugim przypadku poszukiwał miejsca zerowego funkcji tan(x) w okolicy 4.5. Jednakże w tych okolicach nie znajduje sie punkt zerowy funkcji a jego asymptota. Liczbą iteracji jest znacznie większą oraz pojawiają się wyraźne wzrosty wartości f(x). Funkcja często zmienia stosowany algorytm. Finalnie zwraca wynik ostatniej iteracji, który nie pokrywa się z rzeczywistością (jest niepoprawny i daleki od poprawnego).
+Przedział: [4.24544, 4.75456]
+Wyniki: nearly 4,7124
